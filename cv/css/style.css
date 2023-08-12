@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap');
+
+/* Configuración de las imagenes */
+#contenedorImagen{
+    background-color: #FFF;
+    background-image: url("/img/background.jpg");    
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+}
+img{
+    height: 200px;
+}
+
+h1, footer{
+    font-size: 35px;
+    text-align: center;
+    background-color: rgb(77, 77, 77);
+    color: white;
+    font-weight: normal;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+span{
+    font-weight: bold;
+}
+.textoCursiva{
+    font-style: italic;
+}
+.centrado{
+    text-align: center;
+}
+
+
+p{
+    text-align: justify;
+}
+
+ul{
+    display: inline-block;
+    text-align: left;
+}
+
+/* Definición del color del título de cada una de las secciones */
+.textColor1{
+    color: rgb(49, 219, 219);
+}
+.textColor2{
+    color: rgb(255, 0, 242);
+}
+.textColor3{
+    color: rgb(245, 79, 79);
+}
+.textColor4{
+    color: rgb(3, 202, 20);
+}
+.textColor5{
+    color: rgb(140, 0, 255);
+}
+.textColor6{
+    color: rgb(155, 165, 22);
+}
+
+/* Identación de textos */
+.textoIndentado{
+    padding-left: 7em;
+}
+.textoIndentadoTitulo{
+    padding-left: 1em;
+}
+.textoIndentadoSubtitulo{
+    padding-left: 3em;
+    font-weight: normal;
+}
+
+i{
+    color: white;
+}
