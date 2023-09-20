@@ -1,0 +1,109 @@
+@use "reset";
+@use "colors" as c;
+@use "fonts" as f;
+@use "mixins";
+
+body{
+    background: c.$background-color;
+    height: 100vh;
+    font-size: 16px;
+
+    header {
+        h1 {
+            padding: 5rem;
+            font-family: f.$holiday-font;
+            color: c.$title-color;
+            text-shadow: 3px 3px c.$title-shadow-color;
+            text-align: center;
+            font-size: 5rem;
+        }
+    }
+    main {
+        section {
+            font-family: f.$antonio-font;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            width: 30rem;
+            height: 50rem;
+            border-radius: 1.25rem;
+            background-color: red;
+            padding: 1.69rem;
+            background: center/cover url("../img/bg_image.png");
+            border: 2px c.$white solid;
+            color: c.$text-color;
+            text-shadow: 1px 2px c.$text-shadow-color;
+            img{
+                height: 15rem;
+                width:fit-content;
+                margin: 0 auto;
+                border-radius: 1.24rem;
+            }
+            i {
+                font-size: 11rem;
+                margin: 0 auto;
+                height: 10rem;
+            }
+            h2 {
+                font-size: 3rem;
+                text-align: center;
+                padding: 1rem 0;
+                text-shadow: 5px 5px c.$text-shadow-color;
+            }
+            article {
+                p{
+                    text-align: left;
+                }            
+            }
+            .indentTitle {
+                padding-left: 1.1em;
+            }
+            .indentText {
+                padding-left: 5.5em;
+            }
+            .italicText {
+                font-style: italic;
+            }
+            p {
+                font-size: 1.5rem;
+                text-align: justify;
+            }
+            button {
+                font-family: f.$antonio-font;
+                font-size: 1.5rem;
+                margin: 3rem 33%;
+                padding: 1rem;
+                border-radius: 1rem;
+                background-color: c.$background-button;
+                color: c.$text-color;
+                text-shadow: 1px 1px c.$text-shadow-color;
+                border-color: c.$white;
+                transition: scale 1s;
+                &:hover {
+                    background-color: c.$background-button-hover;
+                    scale: 1.2;
+                }
+            }
+        }
+    }
+    footer {
+        text-align: center;
+        padding: 5rem;
+        span {
+            font-family: f.$holiday-font;
+            color: c.$title-color;
+            text-shadow: 3px 3px c.$title-shadow-color;
+            font-size: 5rem;
+        }
+        ul {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            color: c.$text-color;
+            text-shadow: 3px 3px c.$text-shadow-color;
+            font-size: 1.5rem;
+        }
+    } 
+    
+}

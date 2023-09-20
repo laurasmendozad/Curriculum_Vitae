@@ -1,82 +1,117 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap');
-
-/* Configuración de las imagenes */
-#contenedorImagen{
-    background-color: #FFF;
-    background-image: url("../img/background.jpg");    
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    text-align: center;
-}
-img{
-    height: 200px;
+@import url("https://fonts.googleapis.com/css2?family=Antonio:wght@100;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-h1, footer{
-    font-size: 35px;
-    text-align: center;
-    background-color: rgb(77, 77, 77);
-    color: white;
-    font-weight: normal;
+a {
+  text-decoration: none;
+  color: inherit;
 }
 
-body{
-    font-family: 'Roboto', sans-serif;
+ul {
+  list-style: none;
 }
 
-span{
-    font-weight: bold;
+@font-face {
+  font-family: "Holiday";
+  src: url("../fonts/Holiday/HolidayFree.otf");
 }
-.textoCursiva{
-    font-style: italic;
+body {
+  background: rgb(1, 1, 11);
+  height: 100vh;
+  font-size: 16px;
 }
-.centrado{
-    text-align: center;
+body header h1 {
+  padding: 5rem;
+  font-family: "Holiday", serif;
+  color: rgb(150, 0, 255);
+  text-shadow: 3px 3px rgb(255, 255, 255);
+  text-align: center;
+  font-size: 5rem;
 }
-
-
-p{
-    text-align: justify;
+body main section {
+  font-family: "Antonio", sans-serif;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 30rem;
+  height: 50rem;
+  border-radius: 1.25rem;
+  background-color: red;
+  padding: 1.69rem;
+  background: center/cover url("../img/bg_image.png");
+  border: 2px rgb(255, 255, 255) solid;
+  color: rgb(255, 255, 255);
+  text-shadow: 1px 2px rgb(150, 0, 255);
 }
-
-ul{
-    display: inline-block;
-    text-align: left;
+body main section img {
+  height: 15rem;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 auto;
+  border-radius: 1.24rem;
 }
-
-/* Definición del color del título de cada una de las secciones */
-.textColor1{
-    color: rgb(49, 219, 219);
+body main section i {
+  font-size: 11rem;
+  margin: 0 auto;
+  height: 10rem;
 }
-.textColor2{
-    color: rgb(255, 0, 242);
+body main section h2 {
+  font-size: 3rem;
+  text-align: center;
+  padding: 1rem 0;
+  text-shadow: 5px 5px rgb(150, 0, 255);
 }
-.textColor3{
-    color: rgb(245, 79, 79);
+body main section article p {
+  text-align: left;
 }
-.textColor4{
-    color: rgb(3, 202, 20);
+body main section .indentTitle {
+  padding-left: 1.1em;
 }
-.textColor5{
-    color: rgb(140, 0, 255);
+body main section .indentText {
+  padding-left: 5.5em;
 }
-.textColor6{
-    color: rgb(155, 165, 22);
+body main section .italicText {
+  font-style: italic;
 }
-
-/* Identación de textos */
-.textoIndentado{
-    padding-left: 7em;
+body main section p {
+  font-size: 1.5rem;
+  text-align: justify;
 }
-.textoIndentadoTitulo{
-    padding-left: 1em;
+body main section button {
+  font-family: "Antonio", sans-serif;
+  font-size: 1.5rem;
+  margin: 3rem 33%;
+  padding: 1rem;
+  border-radius: 1rem;
+  background-color: transparent;
+  color: rgb(255, 255, 255);
+  text-shadow: 1px 1px rgb(150, 0, 255);
+  border-color: rgb(255, 255, 255);
+  transition: scale 1s;
 }
-.textoIndentadoSubtitulo{
-    padding-left: 3em;
-    font-weight: normal;
+body main section button:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  scale: 1.2;
 }
-
-i{
-    color: white;
+body footer {
+  text-align: center;
+  padding: 5rem;
 }
+body footer span {
+  font-family: "Holiday", serif;
+  color: rgb(150, 0, 255);
+  text-shadow: 3px 3px rgb(255, 255, 255);
+  font-size: 5rem;
+}
+body footer ul {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  color: rgb(255, 255, 255);
+  text-shadow: 3px 3px rgb(150, 0, 255);
+  font-size: 1.5rem;
+}/*# sourceMappingURL=style.css.map */
